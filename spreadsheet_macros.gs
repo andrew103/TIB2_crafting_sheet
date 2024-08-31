@@ -100,12 +100,12 @@ function checkCraftsUpdate() {
   
   // Testing function for verifying that texts come through properly
   function testSendMessage() {
-    GmailApp.sendEmail("<PHONE NUMBER>@vtext.com", "test subject", "test body");
+    GmailApp.sendEmail("<PHONE NUMBER>@<PROVIDER ADDRESS>.com", "test subject", "test body");
   }
   
   // Sends an email message to the target. Intended to be phone number
   function sendText(body) {
-    var target = "<PHONE NUMBER>@vtext.com"
+    var target = "<PHONE NUMBER>@<PROVIDER ADDRESS>.com"
     var subject = "TIB2 Crafting"
   
     // Logger.log(body)
